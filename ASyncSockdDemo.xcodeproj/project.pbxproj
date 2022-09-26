@@ -14,6 +14,9 @@
 		20A26BE528E14AA800ADB860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A26BE428E14AA800ADB860 /* Assets.xcassets */; };
 		20A26BE828E14AA800ADB860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A26BE628E14AA800ADB860 /* LaunchScreen.storyboard */; };
 		20A26BEB28E14AA800ADB860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A26BEA28E14AA800ADB860 /* main.m */; };
+		20A26C1528E14BAB00ADB860 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A26C1328E14BAB00ADB860 /* GCDAsyncSocket.m */; };
+		20A26C1628E14BAB00ADB860 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A26C1428E14BAB00ADB860 /* GCDAsyncUdpSocket.m */; };
+		20A26C1928E1896000ADB860 /* ChatHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A26C1828E1896000ADB860 /* ChatHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		20A26BE728E14AA800ADB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A26BE928E14AA800ADB860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20A26BEA28E14AA800ADB860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20A26C1128E14BAB00ADB860 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		20A26C1228E14BAB00ADB860 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		20A26C1328E14BAB00ADB860 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		20A26C1428E14BAB00ADB860 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		20A26C1728E1896000ADB860 /* ChatHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatHandler.h; sourceTree = "<group>"; };
+		20A26C1828E1896000ADB860 /* ChatHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +70,18 @@
 		20A26BD728E14AA700ADB860 /* ASyncSockdDemo */ = {
 			isa = PBXGroup;
 			children = (
+				20A26C1228E14BAB00ADB860 /* GCDAsyncSocket.h */,
+				20A26C1328E14BAB00ADB860 /* GCDAsyncSocket.m */,
+				20A26C1128E14BAB00ADB860 /* GCDAsyncUdpSocket.h */,
+				20A26C1428E14BAB00ADB860 /* GCDAsyncUdpSocket.m */,
 				20A26BD828E14AA700ADB860 /* AppDelegate.h */,
 				20A26BD928E14AA700ADB860 /* AppDelegate.m */,
 				20A26BDB28E14AA700ADB860 /* SceneDelegate.h */,
 				20A26BDC28E14AA700ADB860 /* SceneDelegate.m */,
 				20A26BDE28E14AA700ADB860 /* ViewController.h */,
 				20A26BDF28E14AA700ADB860 /* ViewController.m */,
+				20A26C1728E1896000ADB860 /* ChatHandler.h */,
+				20A26C1828E1896000ADB860 /* ChatHandler.m */,
 				20A26BE128E14AA700ADB860 /* Main.storyboard */,
 				20A26BE428E14AA800ADB860 /* Assets.xcassets */,
 				20A26BE628E14AA800ADB860 /* LaunchScreen.storyboard */,
@@ -147,8 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A26BE028E14AA700ADB860 /* ViewController.m in Sources */,
+				20A26C1928E1896000ADB860 /* ChatHandler.m in Sources */,
+				20A26C1528E14BAB00ADB860 /* GCDAsyncSocket.m in Sources */,
 				20A26BDA28E14AA700ADB860 /* AppDelegate.m in Sources */,
 				20A26BEB28E14AA800ADB860 /* main.m in Sources */,
+				20A26C1628E14BAB00ADB860 /* GCDAsyncUdpSocket.m in Sources */,
 				20A26BDD28E14AA700ADB860 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
